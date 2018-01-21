@@ -1,0 +1,362 @@
+#banner-300x600{
+    margin: 0;
+}
+
+/**********************
+*****banner-300x600****
+***********************/
+
+#banner-300x600{
+    height: 600px;
+    width: 300px;
+}
+
+
+#banner-300x600 #footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+
+    visibility: hidden;
+    animation: slideinbottom 1.5s ease 0s forwards;
+    -webkit-animation: slideinbottom 1.5s ease 0s forwards;
+    -o-animation: slideinbottom 1.5s ease 0s forwards;
+    -moz-animation: slideinbottom 1.5s ease 0s forwards;
+}
+
+#banner-300x600 #bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+
+    opacity: 0;
+    animation: visible 2s linear 0s forwards;
+    -webkit-animation: visible 2s linear 0s forwards;
+    -o-animation: visible 2s linear 0s forwards;
+    -moz-animation: visible 2s linear 0s forwards;
+}
+
+
+#banner-300x600 #logo{
+    position: absolute;
+    bottom: 42px;
+    left: 33px;
+    z-index: 1;
+    width: 100px;
+    height: 87px;
+    background: #fff;
+    border: 2px solid #26667b;
+    padding: 10px;
+
+    opacity: 0;
+    animation: 2s visible ease 1.5s forwards;
+    -webkit-animation: 2s visible ease 1.5s forwards;
+    -moz-animation: 2s visible ease 1.5s forwards;
+    -o-animation: 2s visible ease 1.5s forwards;
+}
+
+#banner-300x600 #logo img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+#banner-300x600 h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 29px;
+    left: 40px;
+    line-height: 97px;
+    color: #111110;
+    font-size: 86px;
+    text-transform: uppercase;
+    z-index: 1;
+
+    opacity: 0;
+    animation: 1s slidetop ease 1s forwards, 2.5s h1-scale 2s linear infinite;
+    -webkit-animation: 1s slidetop ease 1s forwards, 2.5s h1-scale 2s linear infinite;
+    -moz-animation: 1s slidetop ease 1s forwards, 2.5s h1-scale 2s linear infinite;
+    -o-animation: 1s slidetop ease 1s forwards, 2.5s h1-scale 2s linear infinite;
+  
+}
+
+#banner-300x600 strong{
+    letter-spacing: 7.5px;
+}
+
+
+#banner-300x600 h2{
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    color: #111110;
+    font-weight: 100;
+    position: absolute;
+    left: 45px;
+    line-height: 26px;
+    text-align: center;
+    z-index: 1;
+
+    visibility: hidden;
+    animation: 0.5s slide-bottom linear 1.5s forwards;
+    -webkit-animation: 0.5s slide-bottom linear 1.5s forwards;
+    -moz-animation: 0.5s slide-bottom linear 1.5s forwards;
+    -o-animation: 0.5s slide-bottom linear 1.5s forwards;
+}
+
+#banner-300x600 h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #111110;
+    position: absolute;
+    top: 215px;
+    right: 35px;
+    line-height: 24px;
+    text-align: center;
+    z-index: 1;
+
+    visibility: hidden;
+    animation: 0.5s slideright linear 2s forwards;
+    -webkit-animation: 0.5s slideright linear 2s forwards;
+    -moz-animation: 0.5s slideright linear 2s forwards;
+    -o-animation: 0.5s slideright linear 2s forwards;
+}
+
+
+#banner-300x600 h4{
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    bottom: 12px;
+    right: 12px;
+    font-weight: 300;
+    z-index: 1;
+
+    visibility: hidden;
+    animation: 0.5s h4-bottom linear 2.5s forwards;
+    -webkit-animation: 0.5s h4-bottom linear 2.5s forwards;
+    -moz-animation: 0.5s h4-bottom linear 2.5s forwards;
+    -o-animation: 0.5s h4-bottom linear 2.5s forwards;
+}
+
+
+#banner-300x600 span{
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    background: #26667b;
+    border-radius: 25px;
+    padding: 3px 35px;
+    line-height: 34px;
+    font-size: 20px;
+    z-index: 1;
+    position: absolute;
+    top: 275px;
+    left: 7px;
+    letter-spacing: 1px;
+
+    visibility: hidden;
+    animation: 0.5s slideleft-span ease 2s forwards;
+    -webkit-animation: 0.5s slideleft-span ease 2s forwards;
+    -moz-animation: 0.5s slideleft-span ease 2s forwards;
+    -o-animation: 0.5s slideleft-span ease 2s forwards;
+}
+
+#banner-300x600 span:hover{
+    color: #26667b;
+    background: transparent;
+    border: 1px solid #26667b;
+}
+
+
+
+
+/**********************
+*****animáció-300x600****
+***********************/
+
+@keyframes visible {
+    from {opacity: 0; }
+    to {opacity: 1;}
+}
+@-webkit-keyframes visible {
+    from {opacity: 0; }
+    to {opacity: 1;}
+}
+@-moz-keyframes visible {
+    from {opacity: 0; }
+    to {opacity: 1;}
+}
+@-o-keyframes visible {
+    from {opacity: 0; }
+    to {opacity: 1;}
+}
+
+
+
+@-webkit-keyframes slideinbottom {
+    0%{ bottom: -200px; visibility: hidden;}
+    100%{bottom: 0; visibility: visible;}
+}
+
+@-o-keyframes slideinbottom {
+    0%{ bottom: -200px; visibility: hidden;}
+    100%{bottom: 0; visibility: visible;}
+}
+
+@-moz-keyframes slideinbottom {
+    0%{ bottom: -200px; visibility: hidden;}
+    100%{bottom: 0; visibility: visible;}
+}
+
+@keyframes slideinbottom {
+    0%{ bottom: -200px; visibility: hidden;}
+    100%{bottom: 0; visibility: visible;}
+}
+
+
+@-webkit-keyframes slidetop {
+    0%{ top: -50px; opacity: 0;}
+    100%{top: 50px; opacity: 1;}
+}
+
+@-o-keyframes slidetop {
+    0%{ top: -50px; opacity: 0;}
+    100%{top: 50px; opacity: 1;}
+}
+
+@-moz-keyframes slidetop {
+    0%{ top: -50px; opacity: 0;}
+    100%{top: 50px; opacity: 1;}
+}
+
+@keyframes slidetop {
+    0%{ top: -50px; opacity: 0;}
+    100%{top: 50px; opacity: 1;}
+}
+
+
+@-webkit-keyframes slide-bottom {
+    0%{ bottom:  350px; visibility: hidden;}
+    100%{bottom: 420px; visibility: visible;}
+}
+
+@-o-keyframes slide-bottom {
+    0%{ bottom:  350px; visibility: hidden;}
+    100%{bottom: 420px; visibility: visible;}
+}
+
+@-moz-keyframes slide-bottom {
+    0%{ bottom:  350px; visibility: hidden;}
+    100%{bottom: 420px; visibility: visible;}
+}
+
+@keyframes slide-bottom {
+    0%{ bottom:  350px; visibility: hidden;}
+    100%{bottom: 420px; visibility: visible;}
+}
+
+
+
+@-webkit-keyframes slideright {
+    0%{ right: -200px; visibility: hidden;}
+    100%{right: 35px; visibility: visible;}
+}
+
+@-o-keyframes slideright {
+    0%{ right: -200px; visibility: hidden;}
+    100%{right: 35px; visibility: visible;}
+}
+
+@-moz-keyframes slideright {
+    0%{ right: -200px; visibility: hidden;}
+    100%{right: 35px; visibility: visible;}
+}
+
+@keyframes slideright {
+    0%{ right: -200px; visibility: hidden;}
+    100%{right: 35px; visibility: visible;}
+}
+
+@-webkit-keyframes slideleft-span {
+    0%{ left: -200px; visibility: hidden;}
+    100%{left: 65px; visibility: visible;}
+}
+
+@-o-keyframes slideleft-span {
+    0%{ left: -200px; visibility: hidden;}
+    100%{left: 65px; visibility: visible;}
+}
+
+@-moz-keyframes slideleft-span {
+    0%{ left: -200px; visibility: hidden;}
+    100%{left: 65px; visibility: visible;}
+}
+
+@keyframes slideleft-span {
+    0%{ left: -200px; visibility: hidden;}
+    100%{left: 65px; visibility: visible;}
+}
+
+@-webkit-keyframes h4-bottom {
+    0%{ bottom: -12px; visibility: hidden;}
+    100%{bottom: 12px; visibility: visible;}
+}
+
+@-o-keyframes h4-bottom {
+    0%{ bottom: -12px; visibility: hidden;}
+    100%{bottom: 12px; visibility: visible;}
+}
+
+@-moz-keyframes h4-bottom {
+    0%{ bottom: -12px; visibility: hidden;}
+    100%{bottom: 12px; visibility: visible;}
+}
+
+@keyframes h4-bottom {
+    0%{ bottom: -12px; visibility: hidden;}
+    100%{bottom: 12px; visibility: visible;}
+}
+
+
+
+@-webkit-keyframes h1-scale {
+    0%{ -webkit-transform:  scale(1);}
+    25%{ -webkit-transform:  scale(1.1);}
+    50%{-webkit-transform:  scale(1.2);}
+    75%{ -webkit-transform:  scale(1.1);}
+    100%{ -webkit-transform:  scale(1);}
+
+}
+@-o-keyframes h1-scale {
+    0%{ -o-transform:  scale(1);}
+    25%{ -o-transform:  scale(1.1);}
+    50%{-o-transform:  scale(1.2);}
+    75%{ -o-transform:  scale(1.1);}
+    100%{ -o-transform:  scale(1);}
+}
+@-moz-keyframes h1-scale {
+    0%{ -moz-transform:  scale(1);}
+    25%{ -moz-transform:  scale(1.1);}
+    50%{-moz-transform:  scale(1.2);}
+    75%{ -moz-transform:  scale(1.1);}
+    100%{ -moz-transform:  scale(1);}
+}
+@keyframes h1-scale {
+    0%{ transform:  scale(1);}
+    25%{ transform:  scale(1.1);}
+    50%{transform:  scale(1.2);}
+    75%{ transform:  scale(1.1);}
+    100%{ transform:  scale(1);}
+}
+
+
